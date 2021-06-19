@@ -1,0 +1,666 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+/* JAVO Cambio tipo de letra */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&display=swap');
+
+/* html {font-family: 'Open Sans', sans-serif;} */
+/* html {font-family: 'Pacifico', cursive;} */
+/* html {font-family: 'Permanent Marker', cursive;} */
+html {font-family: 'Satisfy', cursive;}
+
+/* Typography */
+p, a {font-weight: 600;}
+.h2 {font-size: 45px;}
+.h3 {font-size: 30px;}
+p.banner-body{
+/* JAVO   */
+  font-size: 20px;
+}
+.light-300 {
+  /* font-family: 'Open Sans', sans-serif !important; */
+  /* font-family: 'Permanent Marker' !important; */
+  font-family: 'Satisfy' !important;
+  font-weight: 300;
+  /* font-size: 20px; */
+  color: #222 !important;
+  /* text-shadow: 2px 2px gray */
+}
+
+.font-abacus1{
+  font-family: 'Anton', sans-serif !important;
+  /* font-family: 'Rubik Mono One', sans-serif !important;   */
+  color:black !important;
+  font-size: 23px;
+}
+
+.font-abacus2{
+  font-family: 'Anton', sans-serif !important;
+  font-weight: bold !important;
+  color:crimson !important;
+  font-size: 20px;
+}
+
+.regular-400 {
+  /* font-family: 'Open Sans', sans-serif !important; */
+  /* font-family: 'Permanent Marker' !importanto; */
+  font-family: 'Satisfy' !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  /* font-family: 'Open Sans', sans-serif !important; */
+  /* font-family: 'Permanent Marker' !important; */
+  font-family: 'Satisfy' !important;
+  font-weight: 600;
+}
+
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #171835;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav {
+  /* position: fixed; */
+  z-index: 1;
+  width: 100%;
+  height: 10%;
+  min-height: 60px;
+  opacity: 0.8;
+}
+/* JAVO Opciones de menu */
+#main_nav .nav-item .nav-link {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#main_nav .nav-item .nav-link:hover {
+  color: #fff;
+/* JAVO   */
+  background-color: #bbb;
+  border-radius: 8px !important ;
+  opacity: 0.8;
+  transition: .1s;
+}
+
+#second-nav{
+  z-index: 1;
+  width: 100%;
+  height: 10px;
+  min-height: 60px;
+}
+#second-nav .nav-item .nav-link{
+  font-size: 1.5em;
+  background-color: #888 !important; */
+  /* font-weight: bold; */
+}
+#second-nav .nav-item .nav-link:hover{
+  color: #fff !important;
+/* JAVO   */
+  background-color: #666 !important;
+  border-radius: 12px !important ;
+  transition: .1s;
+}
+
+#work-nav{
+  width: 100%;
+  height: 10px;
+  min-height: 60px;
+  background-color: #999;
+  border-radius: 6px !important ;
+}
+#work-nav .filter-btn{
+  font-size: 1.5em;
+  background-color: #aaa !important; */
+}
+#work-nav .filter-btn:hover{
+  color: #fff !important;
+/* JAVO   */
+  background-color: #888 !important;
+  border-radius: 12px !important ;
+  transition: .1s;
+}
+
+#btn-work-consultas{
+  border-width: 1px;
+  font-weight: bold;
+  background-color: #eee;
+  opacity: 0.6;
+}
+
+#btn-work-consultas:hover{
+  border-width: 1px;
+  font-weight: bold;
+  background-color: #ccc;
+  opacity: 0.6;
+}
+
+/* JAVO boton de Portfolio */
+.col-lg-3 .btn{
+  background-color: #888;
+  border-color:  #666;
+  font-weight: bold;
+}
+.col-lg-3 .btn:hover{
+  color: #fff !important;
+/* JAVO   */
+  background-color: #666;
+  border-radius: 12px !important ;
+  transition: .1s;
+}
+/* JAVO Boton Enviar */
+.input-group .btn{
+  background-color: #888;
+  border-color:  #666;
+  font-weight: bold;
+}
+
+/* JAVO Boton Quienes Somos en Work */
+.btn-secondary{
+  background-color: #888;
+  border-color:  #666;
+  font-weight: bold;
+}
+
+.btn-secondary:hover{
+  background-color: #666;
+  border-color:  #666 !important;
+  border-radius: 12px !important ;
+  transition: .1s;
+}
+
+.btn-outline-light:hover{
+  border-radius: 12px !important ;
+  border-color:  #666 !important;
+}
+
+#Btn-Env-Mensaje{
+  background-color: #888;
+  border-color:  #666;
+  font-weight: bold;
+}
+
+#Btn-Env-Mensaje:hover{
+  color: #fff !important;
+/* JAVO   */
+  background-color: #666;
+  border-radius: 12px !important ;
+  transition: .1s;
+}
+@media (min-width: 576px) {
+  #main_nav {
+    position: relative;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #main_nav {
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  #main_nav {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main_nav {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1400px) {
+  #main_nav {
+    position: fixed;
+  }
+}
+
+/* Home */
+#logo {
+  background-image: url('./../img2/logoabacus2.jpg');
+  width: 200px;
+  min-width: 200px;
+  margin-left: 10px;
+} 
+
+#logo:hover{
+/* JAVO */
+  opacity: 0.5;
+  transition: 2s;
+}
+
+#logo2 {
+  background-image: url('./../img2/LogoAbacusSolo.png');
+  width: 200px;
+  min-width: 200px;
+} 
+#logoabacuspie{
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes spinhov3D {
+  from { transform: rotateY(0deg) }
+  to { transform: rotateY(360deg) }
+}
+.spinhov3D:hover {
+  animation-name: spinhov3D;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spinning {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+.spin {
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+}
+
+@keyframes spin3D {
+  from { transform: rotateY(0deg) }
+  to { transform: rotateY(360deg) }
+}
+.spin3D {
+  animation-name: spin3D;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+}
+
+/* #logoabacuspie:hover{
+  opacity: 0.8;
+  transition: 0.2s ;
+} */
+
+#index_banner {
+  background-image: url('./../img2/home-bg.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+
+#index_banner .carousel-item {
+  min-height: 60vh;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  /* color: #6266ea !important; */
+/* JAVO   */
+  color: #0d0d0d !important;
+  text-decoration: none;
+  font-size: 6em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  /* background-color: #6266ea !important; */
+  /* background-color: #6266ea !important; */
+  background-color: #222 !important;
+  /* // las rayas de abajo del carrousel van de color azul */
+}
+
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+/* JAVO Menu secundario intermedio */
+.bg-secondary{
+  background-color: gray !important;
+  opacity: 0.8;
+}
+
+.pie-footer{
+  background-color: #999 !important;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%); */
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgb(91, 90, 95) 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+
+/* JAVO iconos */
+.bxs-bell{
+  color:crimson !important;
+  border-color: darkgray !important;
+  border-radius: 12px;
+  border-width: 4px;
+}
+
+.bx-cog{
+  color:crimson !important;
+  border-color:darkgray !important;
+  border-width: 4px;
+}
+.bx-user-circle{
+  color:crimson !important;
+  border-color:darkgray !important;
+  border-radius: 12px;
+  border-width: 4px;
+}
+
+.bx-donate-heart{
+  color:crimson !important;
+  border-color:darkgray !important;
+  border-radius: 12px;
+  border-width: 4px;
+}
+
+.bxs-component{
+  color:black !important;
+  border-color:darkgray !important;
+  border-radius: 12px;
+  border-width: 4px;
+}
+
+.bxl-tux{
+  background-color: white ;
+  color:black;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+.bxl-windows{
+  color:dodgerblue;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+.bxl-apple{
+  color:black;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+.bxl-html5{
+  background-color: white;
+  color:orangered;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+.bxl-nodejs{
+  background-color:yellow;
+  color:black;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+.bxl-whatsapp{
+  color: green;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+.bx-news{
+  color:crimson !important;
+  border-color:darkgray !important;
+  border-width: 4px;
+}
+
+.bx-laptop{
+  color:crimson !important;
+  border-color:darkgray !important;
+  border-width: 4px;
+}
+
+.bx-money{
+  color:crimson !important;
+  border-color:darkgray !important;
+  border-width: 4px;
+}
+
+/* About */
+#work_banner {
+  /* background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%; */
+  background-image: url('./../img2/home-bg6.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+
+/************************/
+.logo-cli .logo-cli-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 33.333%, rgb(91, 90, 95) 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.logo-cli .logo-cli-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+  opacity: 1;
+}
+
+.logo-cli .logo-cli-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+
+/* JAVO Logos clientes le pude el border-radius. Le tuve que poner a ambas para que se vea */
+
+.progress {
+  height: 8px;
+}
+
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+
+.partner-wap {
+  background-color: #7276ec;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #b1b3f5;
+}
+.why-us {
+  background: rgb(239,239,253);
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
+
+
+/* Reloj Propia */
+#reloj {
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+}
+
+.circle{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #fff;
+  color:#fff;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle::before{
+  content: '';
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: calc(50% - 80px);
+  top: calc(50% - 80px);
+  background-color: #1d1d1d;
+}
+
+.seconds-sphere{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  animation: rotacion 60s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes rotacion{
+  from {transform: rotate(-90deg) translateX(60px); }
+  to {transform: rotate(270deg) translate(60px); }
+}
+
+.buttons{
+  margin-top: 10px;
+  display: inline-flex;
+}
+
+.paused{
+  height: 10px;
+  border-width: 5px 0 5px 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 15px;
+  border-color: transparent transparent transparent #fff;
+  transition: 100ms all ease;
+  will-change: border-width;
+  border-style: solid;
+}
+
+.running{
+  border-style: double;
+  border-width: 0 0 0 10px;
+}
+
+.stop{
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+}
